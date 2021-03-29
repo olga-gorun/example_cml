@@ -7,9 +7,9 @@ jobs:
      steps:
         - uses: actions/checkout@v2
         - name: cml_run
-           env:
+         env:
               repo_token: ${{ secrets.GITHUB_TOKEN }}
-           run: |
+         run: |
               pip install -r requirements.txt
               python train.py
 
